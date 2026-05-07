@@ -1,0 +1,212 @@
+<html>
+  <html lang="de">
+    <head>
+      <title>LernZettel CSS</title>
+      <link rel="stylesheet" href="Lernzettel.css" />
+    </head>
+    <body>
+      <header>
+        <u><h1>CSS (Cascading Style Sheets)</h1></u>
+      </header>
+      <p>
+        Info die Bindestriche zwischen dem -style- werden durch eine { Spitze
+        Klammer und durch eine } Spitze Klammer
+        <strong
+          >Die Attribute werden IMMER mit einem ; [Semikolon] beendet</strong
+        >
+      </p>
+      <hr />
+
+      <h2>CSS Selektoren</h2>
+      <h3>Element-Selektor [über p, div, h3, usw]</h3>
+      <p>
+        CSS-Elementselektoren (oft auch Typselektoren genannt) sind die
+        einfachste Form von CSS-Selektoren. Sie sprechen HTML-Elemente direkt
+        über ihren Namen (Tag-Namen) an.
+      </p>
+
+      <h3>Klassen-Selektor [über . [Punkt]]</h3>
+      <p>
+        Dann gibt es noch den Klassen- Selektor diese werden im -style- mit dem
+        . [Punkt] angesprochen.
+        <strong
+          >Wichtig mann muss vorher dem Tag class: "Irgend ein Name"
+          vergeben</strong
+        >
+      </p>
+      <h3>Id- Selektor [über # [Raute]]</h3>
+      <p>
+        Die ID- Selektoren werden im -style- über die # [Raute] angesprochen
+        <strong
+          >Wichtig mann muss vorher in dem Tag eine id="" vergeben diese ID geht
+          immer nur einmal</strong
+        ><br />
+      </p>
+      <hr />
+      <h3>CSS Extern</h3>
+      <p>
+        Mann erstellt eine neue Datei mit dem namen .css. Diese datei wird durch
+        einen Link im HTML Dokument verlinkt,
+        <u>Dieser Link muss auch in den head bereich rein</u>
+        <b>diese form wird am meisten genutzt</b>
+        <br /><strong>-link rel="stylesheet" href="der Pfad der Datei"-</strong>
+      </p>
+      <h3>CSS Inline</h3>
+      <div>
+        Inline-CSS wird direkt im HTML-Tag über das style-Attribut definiert, um
+        spezifische Elemente schnell und lokal zu formatieren. Es überschreibt
+        externe Stylesheets aufgrund seiner hohen Spezifität, führt jedoch bei
+        häufiger Nutzung zu unübersichtlichem Code, erschwerter Wartung und
+        längeren Ladezeiten, weshalb es primär für Tests oder kleine Anpassungen
+        geeignet ist. Erwird direkt in einem Tag verwendent <br />
+        <b>[-p style="color: blue"-]</b>
+      </div>
+      <h3>CSS Infile</h3>
+      <p>
+        Infile ist das CSS was sich im head befindet wird meistens genutzt wenn
+        eine nicht so aufwendige HTML geschrieben wird es wird im head bereich
+        geschrieben
+      </p>
+
+      -style- <br />
+      p -color: blue- <br />
+      -/style-
+
+      <hr />
+      <hr />
+      <h3>Textformatierung in CSS</h3>
+      <p>
+        <strong>font-family:</strong> Schriftart <br />
+        <strong>font-size:</strong> Schriftgröße <br />
+        <strong>font-weight:</strong> Schriftbreite <br />
+        <strong>color:</strong> Farbe <br /><strong>text-align:</strong> Text
+        position
+      </p>
+      <hr />
+      <h3>Der Hintergrund</h3>
+      <p>
+        Der Hintergrund wird im Body-Tag geschrieben [-body
+        style="background-color:brown" <br />
+        dann geht es noch mit einem Hintergund Bild <br />
+        <strong>[-body style="background-image:url(Pfad der URL)"-]</strong>
+      </p>
+      <hr />
+      <h3>CSS Boxmodell</h3>
+      <img src="512px-Box-Modell.svg.png" alt="Boxmodell" /> <br />
+      <div
+        style="height: 18; width: 1000; padding-top: 10px; padding-bottom: 20px"
+      >
+        Die Komponenten des Boxmodells (von innen nach außen)
+      </div>
+      <div>
+        <strong>Content (Inhalt)</strong>: Der eigentliche Inhalt, z. B. Text
+        oder Bilder. Kann mit width: und height: angepasst werden über den
+        [-style-] tag
+      </div>
+      <br />
+      <div>
+        <strong>Padding (Innenabstand)</strong>: Transparenter Bereich direkt um
+        den Inhalt. [Veränderbar über style="padding-top: 10px;"]
+      </div>
+      <br />
+      <div>
+        <strong>Border (Rahmen)</strong>: Eine Linie, die Padding und Inhalt
+        umgibt. [Veränderbar über style="border-top: 10px;"]
+      </div>
+      <br />
+      <div>
+        <strong>Margin (Außenabstand)</strong>: Transparenter Bereich außerhalb
+        des Rahmens, der Abstand zu anderen Elementen schafft. [Veränderbar über
+        style="margin-top: 10px;"]
+      </div>
+      <hr />
+      <h3>CSS Flexbox</h3>
+      <a
+        href="https://css-tricks.com/wp-content/uploads/2022/02/css-flexbox-poster.png"
+        target="_blank"
+        >CSS Flexbox Poster</a
+      >
+      <p>
+        <strong
+          >Es wird der display: Flex; verwendent
+          <em
+            >flex und grid wird im Hauptcontainer [parent] angewendet!</em
+          ></strong
+        >
+      </p>
+      <strong>flex-direction:</strong> [Flex-Richtung] ist eine CSS-Eigenschaft
+      im Flexbox-Modell, die festlegt, ob Flex-Elemente in einer Zeile (row)
+      oder Spalte (column) angeordnet werden. Sie definiert die Ausrichtung der
+      Hauptachse, wobei row (Standard) die Elemente horizontal und column
+      vertikal anordnet. Zudem ermöglicht sie durch reverse-Werte die Umkehrung
+      der Anordnung.
+      <p>
+        <strong>gap: XXpx;</strong> ist die Lücke zwischen den Reihen und den
+        Spalten in Flexbox-, Grid- und Mehrspalten-Layouts.
+      </p>
+      <p>
+        <strong>justify-content: center;</strong> [Inhalt ausrichten] Sie
+        richtet Flex-Items aus (z.B. zentriert, verteilt) und beeinflusst deren
+        Position. Es ist entscheidend für responsives Design, da es sich an
+        Bildschirmgrößen anpasst.
+      </p>
+      <p>
+        <strong>align-items: center; </strong> [Elemente ausrichten] ist eine
+        CSS-Eigenschaft in Flexbox- und Grid-Layouts, die Flex-Items auf der
+        Querachse (meist vertikal) ausrichtet. Sie wird auf den Container
+        angewendet, um Kindelemente zu zentrieren (center), am Anfang/Ende zu
+        platzieren (flex-start/flex-end) oder zu strecken (stretch,
+        Standardwert). Sie zentriert Elemente vertikal, wenn flex-direction auf
+        row steht.
+      </p>
+      <hr />
+      <h3>CSS Pseudo Class</h3>
+      <p>
+        CSS-Pseudoklassen sind Schlüsselwörter, die mit einem Doppelpunkt (:)
+        beginnen und an Selektoren angehängt werden, um HTML-Elemente basierend
+        auf ihrem Zustand oder ihrer Position im Dokumentbaum zu stylen. Sie
+        ermöglichen dynamische Stile, ohne Klassen im HTML hinzufügen zu müssen
+      </p>
+      <p>
+        <strong>:hover</strong> Stilt ein Element, wenn der Mauszeiger darüber
+        schwebt.
+      </p>
+      <p>
+        <strong>:active</strong> Stilt ein Element, während es aktiviert wird
+        (z. B. beim Anklicken).
+      </p>
+      <p>
+        <strong>:focus</strong> Stilt ein Element, wenn es den Fokus hat (z. B.
+        durch Tab-Taste oder Klick).
+      </p>
+      <p>
+        <strong>:focus-visible</strong> Zeigt einen Fokusrahmen nur dann an,
+        wenn er für den Nutzer sichtbar sein sollte (besser für
+        Barrierefreiheit).
+      </p>
+      <p>
+        <strong>:focus-within</strong> Stilt ein Element, wenn es selbst oder
+        eines seiner Kinder den Fokus hat.
+      </p>
+      <hr />
+      <h3>CSS Spezifität</h3>
+      <p>
+        CSS-Spezifität ist der Algorithmus, mit dem Browser bestimmen, welche
+        CSS-Regel auf ein Element angewendet wird, wenn mehrere konkurrierende
+        Regeln existieren. Sie gewichtet Selektoren (ID > Klasse > Element) und
+        entscheidet, welcher Stil Vorrang hat. Höhere Spezifität gewinnt, wobei
+        Inline-Styles am stärksten sind.
+      </p>
+      <p>
+        <strong>Hierarchie:</strong> Die Gewichtung folgt einer Struktur:
+        Inline-Styles (1,0,0,0) > ID-Selektoren (0,1,0,0) >
+        Klassen/Attribute/Pseudoklassen (0,0,1,0) > Elemente/Pseudoelemente
+        (0,0,0,1).
+      </p>
+      <p>
+        <strong>!important:</strong> Diese Regel überschreibt alle anderen
+        Spezifitäten, sollte aber sparsam eingesetzt werden.
+      </p>
+    </body>
+  </html>
+</html>

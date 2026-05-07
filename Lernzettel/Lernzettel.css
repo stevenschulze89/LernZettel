@@ -1,0 +1,19 @@
+* {
+  background-color: bisque;
+  text-align: left;
+}
+
+h3 {
+  color: blue;
+  font-style: italic;
+}
+
+strong {
+  font-size: large;
+  color: red;
+}
+
+b {
+  font-size: larger;
+  color: crimson;
+}
