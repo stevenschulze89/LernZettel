@@ -14,8 +14,7 @@ strong {
 }
 
 b {
-  font-size: larger;
   color: crimson;
-  background-color: lightgray;
-  border: 1px solid black;
+  background-color: gray;
+  padding: 5px;
 }
