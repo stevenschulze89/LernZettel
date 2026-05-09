@@ -4,7 +4,7 @@
 }
 
 body {
-  font-style: italic;
+  font-style: monospace;
 }
 
 .hero {
@@ -63,4 +63,10 @@ body {
   width: 250px;
   height: 40px;
   background-color: red;
+}
+
+.hero-button:hover {
+  background-color: transparent;
+  border: red;
+  transition: 1.5s;
 }
