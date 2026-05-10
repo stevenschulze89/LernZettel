@@ -20,6 +20,7 @@ body {
   justify-content: center;
   justify-items: center;
   color: white;
+  flex-wrap: wrap;
 }
 
 .hero-img {
@@ -50,6 +51,7 @@ body {
   align-items: center;
   font-size: 1.5rem;
   margin-bottom: 50px;
+  color: rgb(199, 199, 199);
 }
 
 .hero-button {
@@ -59,14 +61,34 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border-radius: 3px;
+  border-radius: 5px;
   width: 250px;
   height: 40px;
   background-color: red;
+  text-decoration: none;
+  border: 1px solid red;
 }
 
 .hero-button:hover {
   background-color: transparent;
-  border: red;
-  transition: 1.5s;
+  transition: 0.5s;
+  color: red;
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    width: 100%;
+  }
+  .Title {
+    font-size: 4rem;
+  }
+  .absatz {
+    font-size: 1rem;
+  }
+  .hero-button {
+    border-radius: 1px;
+    background-color: red;
+    color: white;
+    width: 250px;
+  }
 }
