@@ -11,6 +11,7 @@ body {
   font-family: "Inter", sans-serif;
 
   --primery-color: #ff3030;
+  --primery-text-color: #ddd;
 }
 /* Navigationleiste*/
 .navi {
@@ -81,10 +82,9 @@ body {
   align-items: center;
   font-size: 2rem;
   margin: 0 0 40px 0;
-  color: rgb(226, 224, 224);
 }
 /* Link- Button-hero section*/
-.button-hero {
+.button {
   font-size: 20px;
   color: #ffffff;
   display: flex;
@@ -108,8 +108,10 @@ body {
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-content: flex-start;
+  align-items: center;
   margin-left: 8rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /*about-container*/
@@ -126,8 +128,12 @@ body {
   position: relative;
 }
 
+.about-text {
+  color: var(--primery-text-color);
+}
+
 /* about-button*/
-.button-about {
+.button {
   font-size: 20px;
   color: #ffffff;
   display: flex;
@@ -145,17 +151,19 @@ body {
 
 .button-about:hover {
   background-color: transparent;
-  color: #ff3030;
+  color: var(--primery-color);
 }
 
 .about-img {
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 100%;
+  gap: 1rem;
 }
 
 .big-picture {
+  width: 100%;
+  max-height: max-content;
+}
+.rechte-bilder {
   width: 100%;
 }
 
