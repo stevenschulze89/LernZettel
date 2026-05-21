@@ -32,6 +32,8 @@ body {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
 }
 
 .nav:hover {
@@ -73,6 +75,7 @@ body {
   text-align: center;
   line-height: 5rem;
   font-family: "Lobster", sans-serif;
+  margin-bottom: 1.5rem;
 }
 /* Absatz hero-section*/
 .absatz {
@@ -103,18 +106,6 @@ body {
   background-color: transparent;
   color: var(--primery-color);
 }
-
-/* about-section*/
-.about {
-  display: flex;
-  flex-direction: column;
-  margin-top: 6rem;
-}
-.container {
-  max-width: 85%;
-  margin: 0 auto;
-}
-/*about-container*/
 
 /*about-Überschrift*/
 #header2 {
@@ -148,7 +139,7 @@ body {
   margin: 1rem 0 0 0;
 }
 
-.container {
+#about {
   max-width: 85%;
   margin: 0 auto;
 }
@@ -158,18 +149,32 @@ body {
   color: var(--primery-color);
 }
 
+.about {
+  display: grid;
+  gap: 2rem;
+}
+.about-images {
+  display: flex;
+  width: 100%;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
 .about-image {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
-.about-imglarge {
+.großes-bild {
   min-width: 50%;
 }
-.about-imgsmall {
+
+.rechte-bilder {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  width: 100%;
 }
 
 /*Media-Queries*/
@@ -239,6 +244,16 @@ body {
 
   #header2 {
     font-size: 2rem;
+  }
+
+  #about {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 6rem;
+  }
+
+  .about-images .rechte-bilder {
+    align-items: center;
+    gap: 1rem;
   }
 }
 
