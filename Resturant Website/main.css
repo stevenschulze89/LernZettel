@@ -127,9 +127,9 @@ body {
 
 /* about-button*/
 .button {
-  font-size: 20px;
+  font-size: 16px;
   color: #ffffff;
-  display: inline-block;
+  display: flex;
   flex-direction: row;
   align-items: center;
   width: max-content;
@@ -182,6 +182,7 @@ body {
 /* Öffnungzeiten section */
 #info {
   height: 30vh;
+
   background:
     linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("info-bild.webp");
@@ -238,7 +239,10 @@ body {
 .contact-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 85%;
+  margin: 0 auto;
 }
 
 .contact-text {
@@ -261,7 +265,13 @@ body {
 
 .button-container {
   display: flex;
+  gap: 0.5rem;
   flex-direction: row;
+  background-color: #1a1a1a;
+}
+
+.kontakt:hover {
+  color: var(--primery-color);
 }
 
 /*Media-Queries*/
@@ -296,7 +306,7 @@ body {
   .absatz {
     font-size: 1.2rem;
   }
-  .button-hero {
+  .button {
     border-radius: 1px;
     background-color: var(--primery-color);
     color: #ffffff;
@@ -318,7 +328,7 @@ body {
   .absatz {
     font-size: 1.5rem;
   }
-  .button-hero {
+  .button {
     background-color: var(--primery-color);
     color: #fff;
     padding: 15px;
