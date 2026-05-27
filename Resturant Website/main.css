@@ -225,24 +225,21 @@ body {
   justify-content: center;
 }
 
-#contact-section {
+#kontakt-section {
   max-width: 85%;
   margin: 0 auto;
 }
 .party-people {
   display: flex;
-  height: 400px;
   width: 600px;
+  height: 400px;
   object-fit: cover;
 }
 
 .contact-content {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  gap: 1rem;
-  max-width: 85%;
-  margin: 0 auto;
+  justify-content: space-evenly;
 }
 
 .contact-text {
@@ -270,10 +267,21 @@ body {
   background-color: #1a1a1a;
 }
 
-.kontakt:hover {
+#kontakt:hover {
   color: var(--primery-color);
+  background-color: transparent;
 }
 
+#mail {
+  background-color: transparent;
+  color: var(--primery-color);
+  transition: 0.5s;
+}
+
+#mail:hover {
+  background-color: var(--primery-color);
+  color: var(--primery-text-color);
+}
 /*Media-Queries*/
 @media screen and (min-width: 340px) {
   .Title {
@@ -292,9 +300,26 @@ body {
     font-size: 1rem;
   }
 
+  .head {
+    font-size: 24px;
+  }
+
   .nav {
     font-size: 0.9rem;
     gap: 2rem;
+  }
+
+  .wrapper {
+    gap: 8rem;
+  }
+
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .party-people {
+    height: 100%;
   }
 }
 
@@ -317,6 +342,14 @@ body {
   }
   .about-text {
     font-size: 1rem;
+  }
+
+  .contact-content {
+    flex-direction: row;
+  }
+
+  .party-people {
+    height: 400px;
   }
 }
 
@@ -359,7 +392,7 @@ body {
   }
 
   .wrapper {
-    gap: 11rem;
+    gap: 6.5rem;
   }
 }
 
