@@ -229,12 +229,6 @@ body {
   max-width: 85%;
   margin: 0 auto;
 }
-.party-people {
-  display: flex;
-  width: 600px;
-  height: 400px;
-  object-fit: cover;
-}
 
 .contact-content {
   display: flex;
@@ -258,13 +252,15 @@ body {
 
 .head.contact {
   font-size: 2rem;
+  margin: 0;
 }
 
 .button-container {
   display: flex;
-  gap: 0.5rem;
+  width: fit-content;
   flex-direction: row;
   background-color: #1a1a1a;
+  align-items: center;
 }
 
 #kontakt:hover {
@@ -313,13 +309,18 @@ body {
     gap: 8rem;
   }
 
+  .header3 {
+    margin: 0.8rem 0 0.5rem 0;
+  }
+
   .contact-content {
     display: flex;
     flex-direction: column;
   }
 
-  .party-people {
-    max-width: 100%;
+  .button-container {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -346,10 +347,15 @@ body {
 
   .contact-content {
     flex-direction: row;
+    gap: 0.5rem;
+  }
+  .button-container {
+    flex-direction: row;
+    gap: 0.5rem;
   }
 
   .party-people {
-    height: 400px;
+    max-width: 30rem;
   }
 }
 
