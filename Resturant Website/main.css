@@ -17,7 +17,7 @@ body {
   --primery-text-color: #ddd;
 }
 /* Navigationleiste*/
-.navi {
+.navie {
   background-color: #1a1a1a;
   width: 100vw;
   height: 5rem;
@@ -247,7 +247,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .head.contact {
@@ -261,6 +261,7 @@ body {
   flex-direction: row;
   background-color: #1a1a1a;
   align-items: center;
+  margin: 0;
 }
 
 #kontakt:hover {
@@ -277,6 +278,40 @@ body {
 #mail:hover {
   background-color: var(--primery-color);
   color: var(--primery-text-color);
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #303030;
+  margin-top: 6rem;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #303030;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.footer-nav {
+  color: var(--primery-text-color);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-top: 1rem;
+  transition: 0.5s;
+  width: 100%;
+}
+
+.footer-nav:hover {
+  color: var(--primery-color);
 }
 /*Media-Queries*/
 @media screen and (min-width: 340px) {
