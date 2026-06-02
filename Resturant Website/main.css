@@ -182,7 +182,6 @@ body {
 /* Öffnungzeiten section */
 #info {
   height: 30vh;
-
   background:
     linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("info-bild.webp");
@@ -191,6 +190,7 @@ body {
   background-repeat: no-repeat;
   margin: 8rem 0;
   padding: 6rem 0;
+  width: 100%;
 }
 /* Öffnungszeiten-Inhalt */
 .info-content {
@@ -226,18 +226,18 @@ body {
 }
 
 #kontakt-section {
-  max-width: 85%;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .party-people {
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 
 .contact-content {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  width: 100%;
 }
 
 .contact-text {
@@ -289,12 +289,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   background-color: #303030;
   margin: 3rem 0 0 0;
   padding: 2rem 0 2rem 0;
   width: 100%;
-  height: max-content;
+  font-size: 3rem;
 }
 
 .footer-nav {
@@ -302,7 +301,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
+  font-size: 4rem;
   text-decoration: none;
   text-transform: uppercase;
   color: var(--primery-text-color);
@@ -316,8 +315,9 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 /*Media-Queries*/
-@media screen and (min-width: 340px) {
+@media screen and (min-width: 344px) {
   .Title {
     font-size: 3rem;
     line-height: 3rem;
@@ -354,25 +354,23 @@ body {
   .contact-content {
     display: flex;
     flex-direction: column;
-    margin-bottom: 5rem;
+    width: 85%;
+    margin: 0 auto;
   }
 
   .button-container {
     display: flex;
     flex-direction: column;
+    margin-bottom: 2rem;
   }
 
   .footer-nav {
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-bottom: 0.7rem;
   }
 
-  .footer-container {
-    gap: 0.8rem;
-  }
-
   .copy {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
 }
 
@@ -402,17 +400,27 @@ body {
     gap: 0.5rem;
   }
   .button-container {
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     gap: 0.5rem;
   }
 
+  .about-content {
+    width: 85%;
+  }
+
   .party-people {
-    max-width: 30rem;
+    max-width: 25rem;
   }
 
   .footer-container {
     flex-direction: row;
     justify-content: center;
+    gap: 2rem;
+  }
+
+  .copy {
+    flex-direction: column;
   }
 }
 
@@ -456,6 +464,10 @@ body {
 
   .wrapper {
     gap: 6.5rem;
+  }
+
+  .button-container {
+    flex-direction: row;
   }
 }
 
