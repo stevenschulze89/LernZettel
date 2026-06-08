@@ -168,7 +168,7 @@ body {
 
 .grid-bild {
   width: 250px;
-  height: 250px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -204,9 +204,11 @@ body {
   justify-content: center;
   align-items: center;
   color: var(--primery-text-color);
+  text-align: left;
 }
 .time {
   color: var(--primery-text-color);
+  text-align: right;
 }
 .wrapper {
   display: flex;
